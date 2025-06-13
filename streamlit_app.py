@@ -38,5 +38,5 @@ if ingredient_list:
         st.success(f"Your smoothie is getting ready {cust_name}",icon='👍')
        
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/orange")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
     
