@@ -1,4 +1,3 @@
-  #requirements.txt
-  - snowflake-snowpark-python
-  - snowflake-snowpark-functions
-  - streamlit
+#requirements.txt
+snowflake-snowpark-python
+streamlit
