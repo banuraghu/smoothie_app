@@ -12,10 +12,8 @@ st.write(
   """
 )
 
-
-
 cnx = st.connection("snowflake")
-session=cnx.session
+session=cnx.session()
 my_dataframe = session.table('SMOOTHIES.PUBLIC.FRUIT_OPTIONS').select(col('FRUIT_NAME'))
 
 
