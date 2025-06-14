@@ -16,7 +16,7 @@ st.write(
 
 cnx = st.connection("snowflake")
 session=cnx.session()
-my_dataframe = session.table('SMOOTHIES.PUBLIC.FRUIT_OPTIONS').select(col('SEARCH_ON'))
+my_dataframe = session.table('SMOOTHIES.PUBLIC.FRUIT_OPTIONS').select ((col('FRUIT_NAME'), col('SEARCH_ON'))
 pd_df = my_dataframe.to_pandas()
 
 
